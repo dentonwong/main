@@ -9,9 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      screens: { sm: '480px', md: '768px', lg: '976px', xl: '1440pd' },
+      screens: { sm: '480px', md: '768px', lg: '976px', xl: '1440px' },
       animation: {
-        fadeIn: 'fadeIn 1.5s',
+        fadeIn: 'fadeIn 2s',
         bounce:
           'bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite',
         slideUp: 'slideUp 0.5s',
@@ -23,6 +23,7 @@ const config: Config = {
         2: '0.2s',
         4: '0.4s',
         6: '0.6s',
+        7: '5s',
       },
       keyframes: {
         fadeIn: {
@@ -40,6 +41,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animation-delay')],
 };
 export default config;

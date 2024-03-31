@@ -15,39 +15,23 @@ const Footer = () => {
           © 2024 Denton Wong<a href="/" className="hover:underline"></a>
         </div>
         <div className="mb-1 flex flex-row items-center justify-center space-x-2">
-          <a href="https://github.com/hqasmei" rel="noreferrer" target="_blank">
-            <AiOutlineGithub
-              className="cursor-pointer text-neutral-500 transition-transform hover:-translate-y-1 dark:text-neutral-100"
-              size={30}
-            />
-          </a>
           <a
-            href="https://twitter.com/hqasmei"
+            href="https://github.com/dentonwong"
             rel="noreferrer"
             target="_blank"
           >
-            <AiOutlineTwitter
+            <AiOutlineGithub
               className="cursor-pointer text-neutral-500 transition-transform hover:-translate-y-1 dark:text-neutral-100"
               size={30}
             />
           </a>
 
           <a
-            href="https://www.linkedin.com/in/hosnaqasmei/"
+            href="https://www.linkedin.com/in/denton-wong/"
             rel="noreferrer"
             target="_blank"
           >
             <AiOutlineLinkedin
-              className="cursor-pointer text-neutral-500 transition-transform hover:-translate-y-1 dark:text-neutral-100"
-              size={30}
-            />
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineYoutube
               className="cursor-pointer text-neutral-500 transition-transform hover:-translate-y-1 dark:text-neutral-100"
               size={30}
             />

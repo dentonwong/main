@@ -6,13 +6,13 @@ const skills = [
   { skill: 'CSS' },
   { skill: 'JavaScript' },
   { skill: 'TypeScript' },
-  { skill: 'Python' },
   { skill: 'React' },
   { skill: 'Next.js' },
   { skill: 'Tailwind CSS' },
   { skill: 'Git' },
   { skill: 'GitHub' },
-  { skill: 'Jupyter Notebooks' },
+  { skill: 'MongoDB' },
+  { skill: 'PostgreSQL' },
 ];
 
 const AboutSection = () => {
@@ -30,35 +30,43 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-              Hi, my name is asdfasdf and I am a{' '}
-              <span className="font-bold">{'highly ambitious'}</span>,
-              <span className="font-bold">{' self-motivated'}</span>, and
-              <span className="font-bold">{' driven'}</span> software engineer
-              based in Los Angeles, CA.
+              Hi, my name is Denton and I am a
+              <span className="font-bold">{' self-motivated'}</span>,
+              <span className="font-bold">{' ambitious'}</span>, and
+              <span className="font-bold">{' curious'}</span> software engineer
+              based in San Francisco, CA.
             </p>
             <br />
             <p>
-              I graduated from California State University, Northridge in 2019
-              with a BS in Computer Engineering and have been working in the
-              field ever since.
+              I graduated from University of California, Davis, in 2010 with a
+              BS in Chemistry and a minor in Philosophy. I completed my
+              Doctorate in Pharmacy in 2014 and had been working in the
+              healthcare industry for well over 7 years. In mid-2023, I decided
+              to make the drastic career change into Software Engineering and
+              began self studying. I worked with an open source organization,
+              Open Source Labs, for several months before settling into my
+              current position as a Frontend Engineer with First Principles
+              Publishing.
             </p>
             <br />
             <p>
-              I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, to making YouTube videos,
-              I am always seeking new experiences and love to keep myself
-              engaged and learning new things.
+              Most of my life now revolves around learning as much as I can
+              regarding programming and software engineering. When I do take a
+              break, some of my hobbies include making still life dioramas of
+              houses or Japanese food stalls, archery, hiking, and just living
+              away from a screen for a bit.
             </p>
             <br />
             <p>
-              I believe that you should{' '}
+              I believe that things you want
               <span className="font-bold text-teal-500">
-                never stop growing
-              </span>{' '}
-              and that&#39;s what I strive to do, I have a passion for
-              technology and a desire to always push the limits of what is
-              possible. I am excited to see where my career takes me and am
-              always open to new opportunities. 🙂
+                {' '}
+                rarely come easily{' '}
+              </span>
+              and that I only fail when I give up. I am excited to see where
+              this career transition takes me. I am constantly on the lookout
+              for opportunities to combine both my passions for healthcare and
+              software engineering!
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
@@ -75,13 +83,13 @@ const AboutSection = () => {
                 );
               })}
             </div>
-            {/* <Image
-              src="/hero-image.png"
+            <Image
+              src="/gg-image.png"
               alt=""
               width={325}
               height={325}
-              className="hidden md:relative md:bottom-4 md:left-32 md:z-0 md:block"
-            /> */}
+              className="mt-4 rounded-3xl md:z-0 md:block"
+            />
           </div>
         </div>
       </div>

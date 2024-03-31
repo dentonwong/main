@@ -6,51 +6,59 @@ import { BsGithub, BsArrowUpRightSquare } from 'react-icons/bs';
 
 const projects = [
   {
-    name: 'Thankful Thoughts',
+    name: 'ReacType',
     description:
-      'ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.',
-    image: '/thankfulthoughts.png',
-    github: 'https://github.com/hqasmei/thankful-thoughts',
-    link: 'https://thankfulthoughts.io/',
+      'A Visual Prototyping Tool For React Developers with visualizers for the application architecture, drag-and-drop canvas interface, and interactive, real-time component code preview.',
+    image: '/reactype.png',
+    github: 'https://github.com/open-source-labs/ReacType',
+    link: 'https://www.reactype.dev/',
   },
   {
-    name: 'PlatoIO',
-    description: 'PlatoIO is a to do list app that built using the PERN stack.',
-    image: '/platoio.png',
-    github: 'https://github.com/hqasmei/platoio',
-    link: 'https://platoio.com/register',
-  },
-  {
-    name: 'Kator Family Photos',
+    name: 'No Framework',
     description:
-      'Kator Family Photos is a photos and video digitization service in the LA area.',
-    image: '/familyphotos.png',
-    github: 'https://github.com/hqasmei/katorfamilyphotos',
-    link: 'https://katorfamilyphotos.com/',
+      'No Framework is barebones web app trying out different aspects of vanilla JS including RESTful API calls and simple cookies and authentication',
+    image: '/noframework.png',
+    github: 'https://github.com/dentonwong/noframework',
+    link: '/',
   },
-  {
-    name: 'Kator Family Photos',
-    description:
-      'Kator Family Photos is a photos and video digitization service in the LA area.',
-    image: '/familyphotos.png',
-    github: 'https://github.com/hqasmei/katorfamilyphotos',
-    link: 'https://katorfamilyphotos.com/',
-  },
-  {
-    name: 'Kator Family Photos',
-    description:
-      'Kator Family Photos is a photos and video digitization service in the LA area.',
-    image: '/familyphotos.png',
-    github: 'https://github.com/hqasmei/katorfamilyphotos',
-    link: 'https://katorfamilyphotos.com/',
-  },
+  // {
+  //   name: 'PlatoIO',
+  //   description: 'PlatoIO is a to do list app that built using the PERN stack.',
+  //   image: '/platoio.png',
+  //   github: 'https://github.com/hqasmei/platoio',
+  //   link: 'https://platoio.com/register',
+  // },
+  // {
+  //   name: 'Kator Family Photos',
+  //   description:
+  //     'Kator Family Photos is a photos and video digitization service in the LA area.',
+  //   image: '/familyphotos.png',
+  //   github: 'https://github.com/hqasmei/katorfamilyphotos',
+  //   link: 'https://katorfamilyphotos.com/',
+  // },
+  // {
+  //   name: 'Kator Family Photos',
+  //   description:
+  //     'Kator Family Photos is a photos and video digitization service in the LA area.',
+  //   image: '/familyphotos.png',
+  //   github: 'https://github.com/hqasmei/katorfamilyphotos',
+  //   link: 'https://katorfamilyphotos.com/',
+  // },
+  // {
+  //   name: 'Kator Family Photos',
+  //   description:
+  //     'Kator Family Photos is a photos and video digitization service in the LA area.',
+  //   image: '/familyphotos.png',
+  //   github: 'https://github.com/hqasmei/katorfamilyphotos',
+  //   link: 'https://katorfamilyphotos.com/',
+  // },
 ];
 
 const ProjectsSection = () => {
   return (
     <section id="projects">
       <h1 className="my-10 text-center text-4xl font-bold">
-        Projects
+        Projects <br /> *Not up to date, please checkout my github for now*
         <hr className="mx-auto my-4 h-1 w-6 rounded border-0 bg-teal-500"></hr>
       </h1>
 
@@ -59,16 +67,16 @@ const ProjectsSection = () => {
           return (
             <div key={idx}>
               <SlideUp offset="-300px 0px -250px 0px">
-                <div className="animation-delay-2 flex  animate-slideUpCubiBezier flex-col md:flex-row md:space-x-12">
+                <div className="flex animate-slideUpCubiBezier  flex-col animation-delay-2 md:flex-row md:space-x-12">
                   <div className=" md:w-1/2">
                     <Link href={project.link}>
-                      {/* <Image
+                      <Image
                         src={project.image}
                         alt=""
                         width={1000}
                         height={1000}
                         className="rounded-xl shadow-xl hover:opacity-70"
-                      /> */}
+                      />
                     </Link>
                   </div>
                   <div className="mt-8 md:w-1/2">
