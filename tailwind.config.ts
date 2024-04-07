@@ -11,7 +11,8 @@ const config: Config = {
     extend: {
       screens: { sm: '480px', md: '768px', lg: '976px', xl: '1440px' },
       animation: {
-        fadeIn: 'fadeIn 2s',
+        fadeIn: 'fadeIn 6s',
+        fadeInExtended: 'fadeInExtended 3s',
         bounce:
           'bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite',
         slideUp: 'slideUp 0.5s',
@@ -29,6 +30,14 @@ const config: Config = {
         fadeIn: {
           from: { opacity: '0' },
           to: { opacity: '1' },
+        },
+        fadeInExtended: {
+          '0%': { opacity: '0' }, // Initial state with opacity 0
+          '20%': { opacity: '0' }, // Intermediate opacity state
+          '40%': { opacity: '0' }, // Intermediate opacity state
+          // '60%': { opacity: '0.6' }, // Intermediate opacity state
+          // '80%': { opacity: '0.8' }, // Intermediate opacity state
+          '100%': { opacity: '1' }, // Final state with full opacity
         },
         slideUp: {
           from: { transform: 'translateY(100%)' },
